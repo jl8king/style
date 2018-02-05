@@ -1,0 +1,13 @@
+1.超过1行后隐藏显示省略号
+overflow: hidden;//超出范围自动隐藏
+text-overflow: ellipsis;//超过范围用省略号显示(...)
+white-space: nowrap;//不自动换行
+
+2.超过指定的行数后隐藏显示省略号(这里是2行)
+display:-webkit-box;
+white-space:normal;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+line-clamp:2;
+overflow: hidden;
+text-overflow: ellipsis;
