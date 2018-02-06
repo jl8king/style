@@ -1,0 +1,61 @@
+《弹性盒子》
+http://www.css88.com/book/css/properties/flex/flex-direction.htm
+http://www.2cto.com/kf/201604/499099.html
+S.使用弹性盒子时要把标签转换成弹性盒子
+	格式:display:flex;
+S2.注意事项
+	1.设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。
+	2.将父级元素设置成了弹性盒子之后，里边第一层的(子元素)要么是一列要么是一行。
+属性
+	①display
+		1.flex将元素声明为弹性盒子
+		2.-webkit-flex;/*谷歌浏览器兼容*/
+	②flex-grow 权重;//权重(用于设置多个子类元素与一个父类元素平分宽度)
+		属性值：非负数;
+		权重平分宽度计算:(父类总宽度-所有个子类宽度的和)/平分权重的总数;
+		每个子元素的宽度:权重平分宽度+每个子级元素的宽度
+	③flex-direction:父类中设置
+		定义:g规定子集元素的排列方式
+		属性值
+			1.row-reverse：从右往左;(文档以栈的顺序排列,内容跟随子级元素正常排列)
+			2.column-reverse:从下往上排列
+			3.row:从左往右排列;默认
+			4.column:从上往下排列
+	④justify-content:父类中设置
+		定义:子级元素的左右对齐
+		属性值
+		1.flex-start:默认
+		2.center:居中
+		3.flex-end:往右对齐
+		4.space-between:分散对齐
+		5.space-around:等分对齐
+	⑤align-items:父类中设置
+		定义:子级元素的上下对齐
+		属性值
+		1.flex-start:默认
+		2.center:垂直居中
+		3.flex-end底部
+	⑥flex-wrap:设置子元素的宽度超出时是否换行
+		属性值
+		1.nowrap(默认值):单行显示，如果书写方式是ltr，Flex项目从左向右排列，反之rtl，从右向左排列 
+	wrap:多行显示，如果书写方式是ltr，Flex项目从左向右排列，反之rtl，从右向左排列
+	wrap-reverse:多行显示，如果书写方式是ltr，Flex项目从右向左排列，反之rtl，从左向右排列
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
