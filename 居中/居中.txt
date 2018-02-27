@@ -1,0 +1,100 @@
+《转为表格将图片中部居中》
+.speak_img > div{
+	width: 2.8rem;
+	height: 2.8rem;
+	display: inline-block;
+	margin-right: .1rem;
+	margin-top: .1rem;
+	background-color: #999;
+	vertical-align: middle;
+}
+.speak_img > div > div{
+	width: 2.8rem;
+	height: 2.8rem;
+	display: table-cell; 
+	vertical-align: middle;
+	text-align: center;
+}
+.speak_img img{
+	max-width: 2.8rem;
+	max-height: 2.8rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+《居中》
+
+.box_ct{
+    /* 定位中部居中 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.box_c{
+    /* 定位水平居中 */
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}
+.box_vc{
+    /* 定位垂直居中 */
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+一、行内元素和行内块级元素和文本居中
+	1.水平居中
+		①text-align:center;
+	2.垂直居中
+		①将元素套在table中
+		②display://转换成表格元素
+
+二、块级元素居中
+	注意：需要设置宽度
+	1.水平居中
+		①margin:0 auto;
+		②margin:百分比;
+	2.垂直居中
+		①display:table-cell;//转换成表格元素
+			vertical-align:middle
+			
+三、使用定位居中
+	1.绝对定位的居中
+		①水平居中
+		left:0;
+		right:0;
+		margin:auto;
+		②垂直居中
+		top:0;
+		bottom:0;
+		margin:auto;
+		③中部居中
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		margin:auto;
+	2.相对定位的居中
+		①水平居中
+		left:0;
+		right:0;
+		margin:auto;
+		②使用相对定位不支持垂直居中
+
+
+
+
